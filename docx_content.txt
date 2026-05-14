@@ -1,0 +1,94 @@
+1. Brief Problem Statement
+Modern AI/ML platforms like Rubiscape integrate multiple components — from data ingestion and preprocessing to model deployment, analytics, visualization, and governance — into a unified workflow. These workflows often include pipelines designed with tools like RubiFlow (data engineering), RubiStudio (data science/ML), RubiAI (generative AI insights), and dashboarding in RubiSight.
+Problem: Traditional QA strategies are inadequate for validating such complex, dynamic AI workflows. These workflows involve data-driven transformations, configurable pipelines, API services, and model outputs that change with data and parameters over time. Without a structured automated testing framework, there is risk of:
+•
+Broken pipelines after updates
+•
+Unhandled data or API errors
+•
+Performance regressions
+•
+Misleading insights returned to users
+There is a need for an automated, robust testing strategy for AI workflows, ensuring reliability, correctness, and performance throughout the entire data-to-insight pipeline.
+2. Project Scope
+In Scope
+•
+Study of AI workflow components within a platform (data ingestion → preprocessing → model inference → output)
+•
+Design of automated test strategies covering API endpoints, data pipelines, model inference, and analytics dashboards
+•
+Implementation of test scripts (e.g., using Python, pytest, Postman, HTTP checks)
+•
+Creation of test templates for functional, regression, and performance checks
+•
+Integration of test harness with continuous validation of pipeline outputs
+•
+Consolidated reporting of test results for QA review
+Expected Deliverables:
+Project documentation
+Test strategy document
+Automated test scripts
+Sample test reports
+Final project presentation
+3. Project Objectives (Measurable)
+Design an end-to-end automated QA framework for AI workflows within the MVP timeline.
+Implement automated API test cases with at least 80% core workflow coverage.
+Detect basic regression issues such as API failures and invalid model outputs.
+Generate structured test reports for each execution cycle.
+Demonstrate enterprise-aligned QA practices through modular and reusable automation design.
+4. Proposed Architecture / Technical Approach
+4.
+1
+ Key Technical Components
+1. Test Runner
+Python with pytest
+requests library for API testing
+2. Data & Output Validator
+JSON schema validation
+Field and data-type checks
+Value range and logical consistency validation
+3. Regression Validator
+Baseline output comparison
+Drift/deviation detection after updates
+4. Performance Monitor
+API response time tracking
+Latency threshold validation
+5. Report Generator
+Automated HTML/CSV reports
+Pass/fail logs
+CI/CD compatible output
+4.
+2
+ Technical Stack (Tentative)
+Python
+Pytest
+Requests
+JSON schema validation
+Logging + pytest-html
+CI/CD integration
+4.
+3
+ Execution Approach
+Analyze AI workflow and API structure
+Derive test cases (schema, range, regression, performance)
+Implement modular automation scripts
+Integrate with scheduler or CI/CD for automated runs
+5. Tentative Execution Plan (10 Weeks)
+Week 1–2
+Understand AI workflow structure
+Define testing strategy
+Draft test plan
+Week 3–4
+Setup automation environment
+Implement basic API tests
+Week 5–6
+Add model output validation
+Implement edge-case testing
+Week 7
+Integrate reporting
+Week 8
+Framework refinement and cleanup
+Week 9
+Documentation and test coverage review
+Week 10
+Final presentation and demo

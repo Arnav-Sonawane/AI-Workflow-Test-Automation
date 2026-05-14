@@ -1,0 +1,12 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "prediction": { "type": "string", "enum": ["Pass", "Fail"] },
+      "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+    },
+    "required": ["name", "prediction", "confidence"]
+  }
+}

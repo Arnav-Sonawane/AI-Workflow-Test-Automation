@@ -1,0 +1,22 @@
+{
+  "output": [
+    {
+      "name": "Alice",
+      "age": 20,
+      "score": 88
+    },
+    {
+      "name": "Charlie",
+      "age": 19,
+      "score": 95
+    },
+    {
+      "name": "Eve",
+      "age": 21,
+      "score": 65
+    }
+  ],
+  "total_records_in": 6,
+  "total_records_out": 3,
+  "duration_seconds": 0.001
+}
