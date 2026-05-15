@@ -4,18 +4,19 @@ from pathlib import Path
 
 # Get the project root directory (assuming utils/config.py is 1 level down)
 PROJECT_ROOT = Path(__file__).parent.parent
-CONFIG_PATH = PROJECT_ROOT / "configs" / "settings.yaml"
+CONFIG_PATH = PROJECT_ROOT / "configs" / "environment.yaml"
 
-def load_config(config_path=CONFIG_PATH):
+def load_environment_config(config_path=CONFIG_PATH):
     if not os.path.exists(config_path):
-        raise FileNotFoundError(f"Config file not found: {config_path}")
-    
-    with open(config_path, "r") as f:
-        config = yaml.safe_load(f)
-    return config
+        raise FileNotFoundError(
+            f"Config file not found: {config_path}"
+        )
+
+    with open(config_path, "r") as file:
+        return yaml.safe_load(file)
 
 # Load once when imported
-settings = load_config()
+settings = load_environment_config()
 
 def get_setting(keys, default=None):
     """

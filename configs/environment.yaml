@@ -1,0 +1,7 @@
+environment: deployed
+
+api:
+  base_url: "https://ai-workflow-api-velc.onrender.com"
+
+paths:
+  schemas_dir: "schemas"
