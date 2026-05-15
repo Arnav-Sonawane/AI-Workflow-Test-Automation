@@ -1,0 +1,20 @@
+api:
+  base_url: "http://localhost:8000/api/v1"
+  timeout_seconds: 5.0
+  ingest_endpoint: "/ingest"
+  predict_endpoint: "/predict"
+
+performance:
+  max_api_latency_seconds: 0.5
+  max_pipeline_duration_seconds: 1.0
+
+paths:
+  schemas_dir: "schemas"
+  reports_dir: "reports"
+  logs_dir: "logs"
+  data_dir: "tests/data"
+
+pipeline:
+  score_min: 0
+  score_max: 100
+  confidence_threshold: 0.70

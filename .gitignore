@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Reports (timestamped)
+reports/html_reports/
+reports/coverage_reports/
+
+# Airflow runtime
+airflow/airflow.db
+airflow/logs/
+airflow/plugins/
+airflow/standalone_admin_password.txt
+airflow/webserver_config.py
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env

@@ -1,0 +1,28 @@
+{
+  "output": [
+    {
+      "name": "Alice",
+      "age": 20,
+      "score": 88,
+      "prediction": "Pass",
+      "confidence": 0.74
+    },
+    {
+      "name": "Charlie",
+      "age": 19,
+      "score": 95,
+      "prediction": "Pass",
+      "confidence": 0.77
+    },
+    {
+      "name": "Eve",
+      "age": 21,
+      "score": 65,
+      "prediction": "Pass",
+      "confidence": 0.93
+    }
+  ],
+  "total_records_in": 6,
+  "total_records_out": 3,
+  "duration_seconds": 0.0056
+}

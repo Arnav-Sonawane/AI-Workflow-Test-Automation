@@ -1,4 +1,4 @@
-name: Automated API Tests
+name: AI Workflow QA Automation
 
 on:
   push:
@@ -23,12 +23,19 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Run tests with pytest
+    - name: Run tests with pytest and coverage
       run: |
-        pytest src/tests/ --html=reports/report.html --self-contained-html -v
+        pytest --cov=app --cov=pipeline --cov-report=html:reports/coverage_html --html=reports/report.html --self-contained-html -v
         
-    - name: Archive Test Report
+    - name: Archive Test HTML Report
       uses: actions/upload-artifact@v3
       with:
-        name: test-report
+        name: pytest-report
         path: reports/report.html
+        
+    - name: Archive Coverage Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: reports/coverage_html/
+
