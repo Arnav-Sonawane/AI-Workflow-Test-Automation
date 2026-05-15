@@ -1,4 +1,0 @@
-ENV: development
-API_URL: http://127.0.0.1:8000
-TIMEOUT_SECONDS: 3
-LOG_LEVEL: INFO
