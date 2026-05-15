@@ -146,7 +146,6 @@ POST /api/v1/predict
 ```
 
 The deployed API is validated automatically through Apache Airflow.
-```
 
 ## Screenshots
 
@@ -165,7 +164,6 @@ The deployed API is validated automatically through Apache Airflow.
 
 <img width="898" height="392" alt="image" src="https://github.com/user-attachments/assets/8f2e45d2-87f1-415a-a3a0-55765ed4d4ac" />
 
-```
 
 ## How to Project
 
